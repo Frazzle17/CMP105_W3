@@ -23,4 +23,20 @@ private:
 	// Default variables for level class.
 	sf::RenderWindow* window;
 	Input* input;
+
+	sf::CircleShape xMover;
+	float xMoverSpeed;
+
+	sf::CircleShape keyMover;
+	float keyMoverXSpeed;
+	float keyMoverYSpeed;
+
+	sf::CircleShape fourMover;
+	float fourMoverXSpeed;
+	float fourMoverYSpeed;
+	bool pressed;
+	float cooldown;
+
+	sf::Text speedText;
+	sf::Font font;
 };
